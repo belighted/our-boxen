@@ -57,7 +57,9 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 
 github "alfred", "1.1.7"
+github "autoconf", "1.0.0"
 github "autojump", "1.0.0"
+github "automake", "1.0.0"
 github "chrome", "1.1.2"
 github "cloudapp", "1.0.0"
 github "dockutil", "0.1.2"
