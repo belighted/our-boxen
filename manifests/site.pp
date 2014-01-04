@@ -61,11 +61,13 @@ node default {
   include dnsmasq
 
   include openssl
-  include ruby::2_0_0
-  include ruby::2_1_0
-  
+  class { 'ruby::global':
+    version => '2.0.0-p353'
+  }
+  ruby::version { '2.1.0': }
+
   include nodejs::v0_10
-  
+
   include alfred
   include autojump
   include chrome
@@ -80,13 +82,14 @@ node default {
   include wkhtmltopdf
   include wget
   include pgadmin3
-  include phantomjs::1_9_2
+  phantomjs::version { '1.9.2': }
   include postgresql
   include pow
   include heroku
   include hipchat
   include zsh
-  
+
+  include dockutil
   dockutil::item { 'Add chrome':
     item     => "/Applications/Google Chrome.app",
     label    => "Google Chrome",
@@ -166,7 +169,7 @@ node default {
       'watch'
     ]:
   }
-  
+
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
   include osx::global::disable_remote_control_ir_receiver
