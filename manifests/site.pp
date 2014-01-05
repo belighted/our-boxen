@@ -88,6 +88,8 @@ node default {
   include heroku
   include hipchat
   include zsh
+  include iterm2::stable
+  include onepassword
 
   include dockutil
   dockutil::item { 'Add chrome':
@@ -151,7 +153,7 @@ node default {
     position => 10,
   }
   dockutil::item { 'Add 1password':
-    item     => "/Applications/1Password.app",
+    item     => "/Applications/1Password 4.app",
     label    => "1Password",
     action   => "add",
     position => 11,
