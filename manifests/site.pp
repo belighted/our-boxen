@@ -90,6 +90,7 @@ node default {
   include zsh
   include iterm2::stable
   include onepassword
+  include mou
 
   include dockutil
   dockutil::item { 'Add chrome':
