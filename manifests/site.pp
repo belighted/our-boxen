@@ -72,6 +72,10 @@ node default {
     node_version => 'v0.10'
   }
 
+#  include sublime_text_2
+#  sublime_text_2::package { 'Emmet':
+#    source => 'sergeche/emmet-sublime'
+#  }
   include alfred
   include autojump
   include chrome
@@ -79,14 +83,14 @@ node default {
   include firefox
   include skype
   include spotify
-  include steam
+#  include steam
   include tower
   include transmission
   include vlc
   include wkhtmltopdf
   include wget
   include pgadmin3
-  include phantomjs::1_9_2
+  phantomjs::version { '1.9.2': }
   include postgresql
   include pow
   include heroku
@@ -95,10 +99,10 @@ node default {
   include iterm2::stable
   include onepassword
   include mou
-  include sequel_pro
-  include redis
-  include istatmenus4
-  include mongodb
+#  include sequel_pro
+#  include redis
+#  include istatmenus4
+#  include mongodb
 
   package {
     [
