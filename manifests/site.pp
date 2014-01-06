@@ -68,21 +68,25 @@ node default {
 
   include nodejs::v0_10
 
+  nodejs::module { ['yeoman', 'socket.io', 'express']:
+    node_version => 'v0.10'
+  }
+
   include alfred
   include autojump
   include chrome
-  include cloudapp
   include dropbox
   include firefox
   include skype
   include spotify
+  include steam
   include tower
   include transmission
   include vlc
   include wkhtmltopdf
   include wget
   include pgadmin3
-  phantomjs::version { '1.9.2': }
+  include phantomjs::1_9_2
   include postgresql
   include pow
   include heroku
@@ -91,82 +95,16 @@ node default {
   include iterm2::stable
   include onepassword
   include mou
+  include sequel_pro
+  include redis
+  include istatmenus4
+  include mongodb
 
-  include dockutil
-  dockutil::item { 'Add chrome':
-    item     => "/Applications/Google Chrome.app",
-    label    => "Google Chrome",
-    action   => "add",
-    position => 1,
-  }
-  dockutil::item { 'Add airmail':
-    item     => "/Applications/Airmail.app",
-    label    => "Airmail",
-    action   => "add",
-    position => 2,
-  }
-  dockutil::item { 'Add osfoora':
-    item     => "/Applications/Osfoora.app",
-    label    => "Osfoora",
-    action   => "add",
-    position => 3,
-  }
-  dockutil::item { 'Add skype':
-    item     => "/Applications/Skype.app",
-    label    => "Skype",
-    action   => "add",
-    position => 4,
-  }
-  dockutil::item { 'Add hipchat':
-    item     => "/Applications/HipChat.app",
-    label    => "HipChat",
-    action   => "add",
-    position => 5,
-  }
-  dockutil::item { 'Add MacVim':
-    item     => "/Applications/MacVim.app",
-    label    => "MacVim",
-    action   => "add",
-    position => 6,
-  }
-  dockutil::item { 'Add iterm':
-    item     => "/Applications/iTerm.app",
-    label    => "iTerm",
-    action   => "add",
-    position => 7,
-  }
-  dockutil::item { 'Add calendar':
-    item     => "/Applications/Calendar.app",
-    label    => "Calendar",
-    action   => "add",
-    position => 8,
-  }
-  dockutil::item { 'Add spotify':
-    item     => "/Applications/Spotify.app",
-    label    => "Spotify",
-    action   => "add",
-    position => 9,
-  }
-  dockutil::item { 'Add transmission':
-    item     => "/Applications/Transmission.app",
-    label    => "Transmission",
-    action   => "add",
-    position => 10,
-  }
-  dockutil::item { 'Add 1password':
-    item     => "/Applications/1Password 4.app",
-    label    => "1Password",
-    action   => "add",
-    position => 11,
-  }
-
-  homebrew::tap { 'joelcogen/macvimsplitbrowser': }
   package {
     [
       'ack',
       'findutils',
       'gnu-tar',
-      'macvim-split-browser',
       'chromedriver',
       'imagemagick',
       'watch'
@@ -175,7 +113,6 @@ node default {
 
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
-  include osx::global::disable_remote_control_ir_receiver
   include osx::finder::show_external_hard_drives_on_desktop
   include osx::finder::show_removable_media_on_desktop
   include osx::finder::empty_trash_securely
