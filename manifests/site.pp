@@ -83,6 +83,7 @@ node default {
   include wget
   include pgadmin3
   phantomjs::version { '1.9.2': }
+  phantomjs::global { '1.9.2': }
   include postgresql
   include pow
   include heroku
