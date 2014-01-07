@@ -59,7 +59,7 @@ node default {
   include automake
   include git
   include hub
-  include dnsmasq
+#  include dnsmasq
 
   include openssl
   class { 'ruby::global':
@@ -73,10 +73,10 @@ node default {
     node_version => 'v0.10'
   }
 
-#  include sublime_text_2
-#  sublime_text_2::package { 'Emmet':
-#    source => 'sergeche/emmet-sublime'
-#  }
+  include sublime_text_2
+  sublime_text_2::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  }
   include alfred
   include autojump
   include chrome
@@ -101,7 +101,7 @@ node default {
   include onepassword
   include mou
 #  include sequel_pro
-#  include redis
+  include redis
 #  include istatmenus4
 #  include mongodb
 
