@@ -84,7 +84,7 @@ node default {
   include firefox
   include skype
   include spotify
-#  include steam
+  include steam
   include tower
   include transmission
   include vlc
