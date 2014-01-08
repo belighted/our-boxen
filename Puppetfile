@@ -34,7 +34,7 @@ github "boxen", "3.3.4"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-#github "dnsmasq",    "1.0.1"
+github "dnsmasq",    "1.0.1"
 github "foreman",    "1.1.0"
 github "gcc",        "2.0.100"
 github "git",        "1.3.7"
@@ -76,6 +76,7 @@ github "postgresql", "2.2.2"
 github "pow", "1.0.0"
 github "qt", "1.2.1"
 github "redis", "2.1.0"
+github "rubymine", "1.1.0"
 #github "sequel_pro", "1.0.1"
 github "skype", "1.0.8"
 github "spotify", "1.0.1"

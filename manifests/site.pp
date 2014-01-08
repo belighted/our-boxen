@@ -59,7 +59,7 @@ node default {
   include automake
   include git
   include hub
-#  include dnsmasq
+  include dnsmasq
 
   include openssl
   class { 'ruby::global':
@@ -69,7 +69,7 @@ node default {
 
   include nodejs::v0_10
 
-  nodejs::module { ['yeoman', 'socket.io', 'express']:
+  nodejs::module { ['yeoman', 'socket.io', 'express', 'cordova']:
     node_version => 'v0.10'
   }
 
@@ -100,6 +100,7 @@ node default {
   include iterm2::stable
   include onepassword
   include mou
+  include rubymine
 #  include sequel_pro
   include redis
 #  include istatmenus4
