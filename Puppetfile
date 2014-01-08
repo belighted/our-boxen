@@ -65,7 +65,7 @@ github "dropbox", "1.2.0"
 github "firefox", "1.1.7"
 github "heroku", "2.1.1"
 github "hipchat", "1.1.0"
-#github "istatmenus4", "1.1.0"  
+github "istatmenus4", "1.1.0"
 github "iterm2", "1.0.6"
 #github "mongodb", "1.0.5"
 github "mou", "1.1.3"

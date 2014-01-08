@@ -103,7 +103,7 @@ node default {
   include rubymine
 #  include sequel_pro
   include redis
-#  include istatmenus4
+  include istatmenus4
 #  include mongodb
 
   package {
