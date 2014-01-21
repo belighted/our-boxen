@@ -1,3 +1,24 @@
+# Belighted's Boxen
+
+This is Belighted's incarnation of [GitHub's Boxen](https://boxen.github.com). Automated Mac provisioning.
+
+## Getting Started with Boxen at Belighted:
+
+### Steps
+0. Format machine to a clean install of OS X
+1. Install Xcode from the Mac App Store.
+2. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
+3. Open Terminal.app and do the following:
+```bash
+sudo mkdir -p /opt/boxen
+sudo chown ${USER}:staff /opt/boxen
+git clone https://github.com/belighted/our-boxen.git /opt/boxen/repo
+cd /opt/boxen/repo
+```
+4. Run `script/boxen`.
+
+The machine's Belighted Boxen provisioning is now complete. Apps (Chrome, Dropbox, etc), Rubies (2.0.0), and Homebrew packages (heroku-toolbelt, etc) have been automatically installed.
+
 # Our Boxen
 
 This is a template Boxen project designed for your organization to fork and
