@@ -83,9 +83,8 @@ node default {
   include dropbox
   include firefox
   include skype
-  include spotify
-  include steam
   include tower
+  #include gitx::l
   include transmission
   include vlc
   include wkhtmltopdf
@@ -101,10 +100,15 @@ node default {
   include onepassword
   include mou
   include rubymine
-#  include sequel_pro
+  include sequel_pro
+  include mysql
   include redis
   include istatmenus4
-#  include mongodb
+  include mongodb
+  include imagemagick
+  include vmware_fusion
+
+  mysql::db { 'mydb': }
 
   package {
     [
