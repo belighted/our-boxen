@@ -15,6 +15,7 @@ sudo chown ${USER}:staff /opt/boxen
 git clone https://github.com/belighted/our-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
 ```
+
 4. Run `script/boxen`.
 
 The machine's Belighted Boxen provisioning is now complete. Apps (Chrome, Dropbox, etc), Rubies (2.0.0), and Homebrew packages (heroku-toolbelt, etc) have been automatically installed.
