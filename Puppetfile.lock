@@ -161,7 +161,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-postgresql
   specs:
-    postgresql (2.2.2)
+    postgresql (3.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-pow
@@ -302,7 +302,7 @@ DEPENDENCIES
   pgadmin3 (= 1.0.0)
   phantomjs (= 2.1.0)
   pkgconfig (= 1.0.0)
-  postgresql (= 2.2.2)
+  postgresql (= 3.0.1)
   pow (= 1.0.0)
   qt (= 1.2.1)
   redis (= 2.1.0)
