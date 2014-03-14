@@ -107,6 +107,7 @@ node default {
   include mongodb
   include imagemagick
   include vmware_fusion
+  include unarchiver
 
   mysql::db { 'mydb': }
 
