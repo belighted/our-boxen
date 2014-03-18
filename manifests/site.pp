@@ -106,6 +106,7 @@ node default {
   include istatmenus4
   include mongodb
   include imagemagick
+  include virtualbox
   include vmware_fusion
   include unarchiver
 
