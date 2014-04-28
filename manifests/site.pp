@@ -65,7 +65,7 @@ node default {
   class { 'ruby::global':
     version => '2.0.0-p353'
   }
-  ruby::version { '2.1.0': }
+  ruby::version { '2.1.1': }
 
   include nodejs::v0_10
 
